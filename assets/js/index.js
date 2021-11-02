@@ -4,7 +4,7 @@ import {
 	getBlueprintTemplate,
 	getBlueprintModalTemplate,
 	getNavDDMenuOptions,
-  getNews
+    getNews
 } from "./utils/functions.js";
 const body = document.querySelector("body");
 const loadScreen = document.querySelector("#loadScreen");
