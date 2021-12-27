@@ -8,6 +8,7 @@ import {
   renderNotificationMessage,
   sendMail,
 } from "./utils/functions.js";
+console.log('JavaScript Loaded')
 const body = document.querySelector("body");
 const loadScreen = document.querySelector("#loadScreen");
 const slider = document.querySelector(".swiper-wrapper");

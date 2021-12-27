@@ -170,6 +170,7 @@ export const sendMail = async form => {
     };
     return await fetch("/sendmail.php", fetchOptions);
   } catch (error) {
+    console.log(error);
     throw new Error(error.message);
   }
 };
