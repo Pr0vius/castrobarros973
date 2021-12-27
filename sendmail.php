@@ -1,8 +1,10 @@
 <?php
 $domain = parse_url($_SERVER['HTTP_REFERER']);
+$allowed_host = array("castrobarros973.com.ar", "localhost", "cb.akuma.dbpages.net");
 
 if (isset($domain['host'])) {
-  if($domain['host'] == 'castrobarros973.com.ar'){
+  // if($domain['host'] == 'castrobarros973.com.ar'){
+  if(in_array($_SERVER["HTTP_HOST"], $allowed_host)) {
     $name = $_POST["name"];
     $location = $_POST["location"];
     $phone = $_POST["phone"];
@@ -21,3 +23,4 @@ if (isset($domain['host'])) {
     echo 'failed';
   }
 }
+exit;
